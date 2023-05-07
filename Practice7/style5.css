@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ac-control {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.ac-control h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FF5733;
+}
+
+.ac-control p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.temperature-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.temp-btn {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #FFC300;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.temp-btn:hover {
+    background-color: #FF5733;
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.mode-control,
+.fan-control {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.mode-control label,
+.fan-control label {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFC300;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mode-control label:hover,
+.fan-control label:hover {
+    background-color: #FF5733;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #FF5733;
+}

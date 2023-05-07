@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Lighting Application</title>
+	<link rel="stylesheet" href="style4.css">
+	<style>
+		.light {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 10px;
+			border-radius: 50%;
+		}
+
+		.red {
+			background-color: #ff0000;
+		}
+
+		.green {
+			background-color: #00ff00;
+		}
+
+		.blue {
+			background-color: #0000ff;
+		}
+
+		.yellow {
+			background-color: #ffff00;
+		}
+
+		.purple {
+			background-color: #800080;
+		}
+
+		.orange {
+			background-color: #ffa500;
+		}
+	</style>
+</head>
+<body>
+	<body class="background-image">
+		<!-- Your HTML content goes here -->
+	  
+	  
+	<h1>Smart Lighting Application</h1>
+	<div id="lights">
+		<div class="light red"></div>
+		<div class="light green"></div>
+		<div class="light blue"></div>
+		<div class="light yellow"></div>
+		<div class="light purple"></div>
+		<div class="light orange"></div>
+	</div>
+	<select id="light-select">
+		<option value="0">Light 1</option>
+		<option value="1">Light 2</option>
+		<option value="2">Light 3</option>
+		<option value="3">Light 4</option>
+		<option value="4">Light 5</option>
+		<option value="5">Light 6</option>
+	</select>
+	<label for="color-picker">Color:</label>
+	<select id="color-select">
+		<option value="#ff0000">Red</option>
+		<option value="#00ff00">Green</option>
+		<option value="#0000ff">Blue</option>
+		<option value="#ffff00">Yellow</option>
+		<option value="#800080">Purple</option>
+		<option value="#ffa500">Orange</option>
+	</select>
+	<button id="change-color-btn">Change Color</button>
+	<script>
+		var lights = document.querySelectorAll('.light');
+		var lightSelect = document.getElementById('light-select');
+		var colorSelect = document.getElementById('color-select');
+		var changeColorBtn = document.getElementById('change-color-btn');
+
+		changeColorBtn.addEventListener('click', function() {
+			var selectedLightIndex = lightSelect.value;
+			var selectedLight = lights[selectedLightIndex];
+			var color = colorSelect.value;
+			selectedLight.style.backgroundColor = color;
+		});
+	</script>
+</body>
+</html>

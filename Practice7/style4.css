@@ -1,0 +1,170 @@
+/* Global styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2.0rem;
+}
+.background-image {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    
+}
+.lights{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 3.0rem;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Light styles */
+
+.light-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    
+}
+
+.light {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+/* Light color styles */
+
+.red {
+    background-color: #ff0000;
+    
+}
+
+.green {
+    background-color: #00ff00;
+    
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+.orange {
+    background-color: #ffa500;
+}
+
+.light:nth-child(odd) {
+    transform: rotate(15deg);
+}
+
+.light:nth-child(even) {
+    transform: rotate(-15deg);
+}
+
+/* Form styles */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.form-select {
+    font-size: 2rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    
+}
+.change-color-btn{
+    font-size: 2rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    
+}
+
+
+.form-btn {
+    font-size: 2rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.form-group select {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: rgb(65, 24, 24);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+
+.form-btn:hover {
+    background-color: rgb(134, 51, 51);
+    
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    .light {
+        width: 50px;
+        height: 50px;
+        
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Security Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Smart Security Control</h1>
+    </div>
+    
+    <div class="content">
+        <h2>Arm/Disarm Security System</h2>
+        <p>Use the button below to arm or disarm your security system.</p>
+        <button class="button">Arm/Disarm</button>
+        
+        <h2>Set Up Motion Detection</h2>
+        <p>Adjust the motion detection settings for your security system to best suit your needs.</p>
+        <form>
+            <label for="sensitivity">Sensitivity:</label>
+            <input type="range" id="sensitivity" name="sensitivity" min="1" max="10">
+            
+            <label for="alert">Send Alert:</label>
+            <input type="checkbox" id="alert" name="alert" checked>
+            
+            <br><br>
+            <button class="button">Save Settings</button>
+        </form>
+        
+        <h2>View Security Footage</h2>
+        <p>Check out the live stream or recorded footage from your security cameras.</p>
+        <button class="button">View Footage</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control AC | Smart Building System</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="ac-control">
+        <h2>Control AC</h2>
+        <p>Temperature:</p>
+        <div class="temperature-control">
+            <button class="temp-btn" id="temp-dec-btn">-</button>
+            <span id="temperature">72</span>
+            <button class="temp-btn" id="temp-inc-btn">+</button>
+        </div>
+        <p>Mode:</p>
+        <div class="mode-control">
+            <label><input type="radio" name="mode" value="cool" checked> Cool</label>
+            <label><input type="radio" name="mode" value="heat"> Heat</label>
+            <label><input type="radio" name="mode" value="fan"> Fan</label>
+        </div>
+        <p>Fan Speed:</p>
+        <div class="fan-control">
+            <label><input type="radio" name="fan" value="low" checked> Low</label>
+            <label><input type="radio" name="fan" value="medium"> Medium</label>
+            <label><input type="radio" name="fan" value="high"> High</label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
